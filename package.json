@@ -1,21 +1,22 @@
 {
-  "name": "@pancakeswap/sdk",
+  "name": "@apeswapfinance/sdk",
   "license": "MIT",
-  "version": "2.3.2",
-  "description": "🛠 An SDK for building applications on top of Pancakeswap.",
+  "version": "1.0.4",
+  "description": "🛠 An SDK for building applications on top of apeswap.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/pancakeswap/pancakeswap-sdk.git",
+  "repository": "https://github.com/ApeSwapFinance/apeswap-sdk",
   "keywords": [
     "pancakeswap",
-    "bsc"
+    "ethereum"
   ],
   "module": "dist/sdk.esm.js",
   "scripts": {
     "lint": "tsdx lint src test",
+    "lint:fix": "tsdx lint src test --fix",
     "build": "tsdx build",
     "start": "tsdx watch",
     "test": "tsdx test",
