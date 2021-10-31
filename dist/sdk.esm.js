@@ -35,8 +35,8 @@ var Rounding;
   Rounding[Rounding["ROUND_UP"] = 2] = "ROUND_UP";
 })(Rounding || (Rounding = {}));
 
-var FACTORY_ADDRESS = '0x161bC83187Bed6ADC2eb4B19F250502186ca5748';
-var INIT_CODE_HASH = '0xb926719a71fe6e71ae567694821887b3fe28886caf6ec65a2d39f4e1110e5651';
+var FACTORY_ADDRESS = '0x0841bd0b734e4f5853f0dd8d7ea041c241fb0da6';
+var INIT_CODE_HASH = '0xf4ccce374816856d11f00e4069e7cada164065686fbef53c6167a63ec2fd8c5b';
 var MINIMUM_LIQUIDITY = /*#__PURE__*/JSBI.BigInt(1000); // exports for internal consumption
 
 var ZERO = /*#__PURE__*/JSBI.BigInt(0);
@@ -46,8 +46,8 @@ var THREE = /*#__PURE__*/JSBI.BigInt(3);
 var FIVE = /*#__PURE__*/JSBI.BigInt(5);
 var TEN = /*#__PURE__*/JSBI.BigInt(10);
 var _100 = /*#__PURE__*/JSBI.BigInt(100);
-var FEES_NUMERATOR = /*#__PURE__*/JSBI.BigInt(9975);
-var FEES_DENOMINATOR = /*#__PURE__*/JSBI.BigInt(10000);
+var FEES_NUMERATOR = /*#__PURE__*/JSBI.BigInt(998);
+var FEES_DENOMINATOR = /*#__PURE__*/JSBI.BigInt(1000);
 var SolidityType;
 
 (function (SolidityType) {
@@ -758,7 +758,7 @@ var Pair = /*#__PURE__*/function () {
   function Pair(tokenAmountA, tokenAmountB) {
     var tokenAmounts = tokenAmountA.token.sortsBefore(tokenAmountB.token) // does safety checks
     ? [tokenAmountA, tokenAmountB] : [tokenAmountB, tokenAmountA];
-    this.liquidityToken = new Token(tokenAmounts[0].token.chainId, Pair.getAddress(tokenAmounts[0].token, tokenAmounts[1].token), 18, 'Birb-LP', 'Birb LPs');
+    this.liquidityToken = new Token(tokenAmounts[0].token.chainId, Pair.getAddress(tokenAmounts[0].token, tokenAmounts[1].token), 18, 'APE-LP', 'ApeSwapFinance LPs');
     this.tokenAmounts = tokenAmounts;
   }
 
